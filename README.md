@@ -3,23 +3,44 @@
 > **End-to-end Data Science project** จากข้อมูลดิบ → EDA → Time Series → NLP → Recommendation System
 > ใช้ข้อมูลจาก Netflix Titles Dataset (8,807 titles)
 
+![Python](https://img.shields.io/badge/Python-3.11-3776AB?logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-Data-150458?logo=pandas&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-ML-F7931E?logo=scikitlearn&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-DistilBERT-EE4C2C?logo=pytorch&logoColor=white)
+![Chart.js](https://img.shields.io/badge/Chart.js-Dashboard-FF6384?logo=chartdotjs&logoColor=white)
+
+---
+
+## Demo
+
+Interactive dashboard รวมทั้ง 4 module ในไฟล์ `index.html` — เปิดในเบราว์เซอร์ได้เลย (สลับหน้าผ่านแท็บด้านบน)
+
+![Landing page](screenshots/hero.png)
+
+| Module 01 — EDA & Dashboard | Module 02 — Time Series |
+|:---:|:---:|
+| ![EDA dashboard](screenshots/module01-eda.png) | ![Time series analysis](screenshots/module02-timeseries.png) |
+| ภาพรวม library, content type split, rating, top countries/genres | Growth trend, cumulative library, release gap, seasonal heatmap |
+| **Module 03 — NLP Genre Classifier** | **Module 04 — Recommender** |
+| ![NLP classifier](screenshots/module03-nlp.png) | ![Recommendation system](screenshots/module04-recommender.png) |
+| Model comparison, confusion matrix, keyword ต่อ genre, live predictor | ค้นชื่อเรื่อง → Top-8 ที่คล้ายที่สุดด้วย cosine similarity |
+
+> **การเปิดดู:** clone repo แล้วเปิด `index.html` ด้วยเบราว์เซอร์ หรือรัน `python3 -m http.server` ในโฟลเดอร์แล้วเข้า `http://localhost:8000`
+
 ---
 
 ## Project Structure
 
 ```
-netflix-ds-portfolio/
-├── data/
-│   └── netflix_titles.csv          # Raw dataset (8,807 titles)
-├── notebooks/
-│   └── netflix_bert_classifier.ipynb  # BERT fine-tuning (Google Colab)
-├── outputs/
-│   ├── netflix_eda_dashboard.html      # Module 01
-│   ├── netflix_timeseries.html         # Module 02
-│   ├── netflix_nlp_classifier.html     # Module 03
-│   └── netflix_recommender.html        # Module 04
+Netflix-Content-Analysis/
+├── index.html                       # Interactive dashboard — ทั้ง 4 module รวมในไฟล์เดียว (nav tabs)
+├── netflix_titles.csv               # Raw dataset (8,807 titles)
+├── netflix_bert_classifier.ipynb    # DistilBERT fine-tuning (Google Colab)
+├── LICENSE
 └── README.md
 ```
+
+> **หมายเหตุ:** ทั้ง 4 module (EDA · Time Series · NLP · Recommender) รวมอยู่ใน `index.html` เดียว สลับดูได้ผ่านแท็บด้านบน เปิดไฟล์นี้ในเบราว์เซอร์เพื่อดู dashboard
 
 ---
 
