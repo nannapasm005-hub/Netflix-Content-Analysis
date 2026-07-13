@@ -9,6 +9,10 @@
 ![PyTorch](https://img.shields.io/badge/PyTorch-DistilBERT-EE4C2C?logo=pytorch&logoColor=white)
 ![Chart.js](https://img.shields.io/badge/Chart.js-Dashboard-FF6384?logo=chartdotjs&logoColor=white)
 
+### 🔴 [**View Live Demo →**](https://nannapasm005-hub.github.io/Netflix-Content-Analysis/)
+
+Interactive dashboard บน GitHub Pages — กดเล่นได้จริง (ค้น recommender, ลอง predict genre)
+
 ---
 
 ## Demo
